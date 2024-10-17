@@ -1,0 +1,29 @@
+{
+  "name": "oct17demo-aws-lambda-static-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardp23/Oct17Demo-AWS-Lambda-Static-Site.git"
+  },
+  "author": "Richard Perez Jr.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richardp23/Oct17Demo-AWS-Lambda-Static-Site/issues"
+  },
+  "homepage": "https://github.com/richardp23/Oct17Demo-AWS-Lambda-Static-Site#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.92",
+    "@types/node": "^14.18.63",
+    "archiver": "^7.0.1",
+    "aws-lambda": "^1.0.7",
+    "fs-extra": "^10.1.0",
+    "typescript": "^4.5.5"
+  }
+}
