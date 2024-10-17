@@ -16,10 +16,14 @@ exec('tsc', (error, stdout, stderr) => {
       console.error(`Error copying files: ${err}`);
     } else {
       console.log('Static files copied successfully');
+
+  // Rename the output file to index.mjs
+      fs.renameSync('./build/lambda-function.js', './build/index.mjs');
       createZipFile();
     }
   });
 });
+
 
 function createZipFile() {
   const output = fs.createWriteStream('./lambda-function.zip');
